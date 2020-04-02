@@ -6,7 +6,7 @@ int main()
 #ifdef _WIN32
   const boost::filesystem::path plugin_path = "./shared_lib.dll";
 #else
-  const boost::filesystem::path plugin_path = "./shared_lib.dll";
+  const boost::filesystem::path plugin_path = "./shared_lib.so";
 #endif
 
   const boost::dll::shared_library lib(plugin_path);
